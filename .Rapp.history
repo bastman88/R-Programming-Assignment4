@@ -1,0 +1,253 @@
+boring_function('My first function!')
+boring_function
+submit()
+my_mean(c(4, 5, 10))
+submit()
+remainder(5)
+remainder(11,5)
+remainder(divisor = 11, num = 5)
+remainder(4, div = 2)
+args(remainder)
+submit()
+s
+evaluate(sd, c(1.4, 3.6, 7.9, 8.8))
+evaluate(function(x){x+1}, 6)
+evaluate(function(x){x[1]}, c(8, 4, 0))
+evaluate(function(x){x[length(x)]}, c(8, 4, 0))
+?paste
+paste("Programming", "is", "fun!")
+submit()
+telegram("Boring")
+submit()
+mad_lips(list(noun="kacki", adjective="fluessige", place = "face"))
+mad_libs(list(noun="kacki", adjective="fluessige", place = "face"))
+submit
+submit()
+"I" %p% "love" %p
+"I" %p% "love" %p% "R"
+"I" %p% "love" %p% "R!"
+set.seed(1)
+rpois(5,2)
+?qpois
+getwd()
+setwd(paste(getwd(), "/R-course", sep=""))
+getwd()
+dir()
+setwd(paste(getwd(), "/rprog_data_ProgAssignment3-data", sep=""))
+dir()
+outcome <- read.csv("outcome-of-care-measures.csv", colClasses = "character")
+head(outcome)
+names(outcome)
+outcome[,11] <- as.numeric(outcome[,11])
+hist(outcome[,11])
+outcome["state"]
+outcome["State"]
+unique(outcome["State"])
+class(unique(outcome["State"]))
+TX %in% unique(outcome["State"])
+"TX" %in% unique(outcome["State"])
+"TN" %in% unique(outcome["State"])
+"TN" %in% unique(outcome["State"])["State"]
+unique(outcome["State"])["State"]
+as.list(unique(outcome["State"]))
+"TX" %in% as.list(unique(outcome["State"]))
+"TX" %in% as.vector(unique(outcome["State"]))
+as.vector(unique(outcome["State"]))
+as.vector(as.list(unique(outcome["State"])))
+"TX" %in% as.vector(as.list(unique(outcome["State"])))
+is.Element("TX", as.list(unique(outcome["State"])))
+is.element("TX", as.list(unique(outcome["State"])))
+is.element("TN", as.list(unique(outcome["State"])))
+is.element("TX", as.list(unique(outcome["State"])))
+exists("TX", as.list(unique(outcome["State"])))
+str(as.list(unique(outcome["State"])))
+str("TX")
+names(as.list(unique(outcome["State"])))
+exists("TX", where = as.list(unique(outcome["State"])))
+exists("TX", where = as.list(unique(outcome["State"]))['State'])
+"TX" %in% as.list(unique(outcome["State"]))
+"TX" %in% as.list(unique(outcome["State"]))['State']
+"TX" %in% c(as.list(unique(outcome["State"])))
+str(as.list(unique(outcome["State"])))
+str(as.list(unique(outcome["State"]))["State"])
+str(as.list(unique(outcome[["State"]])))
+"TX" %in% as.list(unique(outcome[["State"]]))
+outcome["State"]["TX"]
+outcome[["State"]]["TX"]
+outcome[["State"]]
+head(outcome)
+outcome[outcome["State"]=="TX"]
+outcome[outcome[,"State"]=="TX",]
+head(outcome[outcome[,"State"]=="TX",])
+filtered_df <- outcome[outcome[,"State"]=="TX",]
+head(filtered_df[,11])
+names(filtered_df)
+head(filtered_df[,"Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack"])
+filtered_df[which.max(filtered_df$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack),]
+filtered_df[which.max(filtered_df$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack),]["hospital.name"]
+filtered_df[which.max(filtered_df$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack),]["Hospital.Name"]
+filtered_df[which.max(filtered_df$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack),][["Hospital.Name"]]
+?which.max
+dir()
+setwd("/Users/sortmanns/git/R-projects/R-Programming-Assignment4")
+dir()
+source("best.R")
+best("TX", "heart attack")
+source("best.R")
+best("TX", "heart attack")
+source("best.R")
+best("TX", "heart attack")
+source("best.R")
+best("TX", "heart attack")
+source("best.R")
+best("TX", "heart attack")
+source("best.R")
+best("TX", "heart attack")
+source("best.R")
+best("TX", "heart attack")
+best("TX", "heart failure")
+best("MD", "heart attack")
+best("MD", "pneumonia")
+source("best.R")
+best("MD", "pneumonia")
+best("BB", "heart attack")
+source("best.R")
+best("BB", "heart attack")
+best("NY", "hert attack")
+?which.min
+?sort
+?apply
+df_outcome <- read.csv("outcome-of-care-measures.csv")#
+    states <- as.list(unique(df_outcome[["State"]]))#
+    outcomes <- c("heart attack","heart failure","pneumonia")
+ls()
+df_outcome_filtered <- df_outcome[df_outcome[,"State"]=="TX",]
+apply(df_outcome_filtered, "Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack", sort)
+apply(df_outcome_filtered, c("Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack"), sort)
+library(dplyr)
+arrange(df_outcome_filtered) %>% arrange("Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack")
+res <- arrange(df_outcome_filtered) %>% arrange("Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack")
+head(res)
+res <- df_outcome_filtered %>% arrange("Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack")
+head(res)
+res <- df_outcome_filtered %>% arrange(Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack)
+head(res)
+ls()
+length(as.list(unique(df_outcome[["Hospital.Name"]])))
+source("rankhospitals.R")
+dir()
+source("rankhospital.R")
+rankhospital("TX", "heart failure", 6)
+length(as.list(unique(df_outcome_filtered[["Hospital.Name"]])))
+source("rankhospital.R")
+rankhospital("TX", "heart failure", 6)
+rankhospital("TX", "heart attack", 6)
+source("rankhospital.R")
+rankhospital("TX", "heart failure", 6)
+?arrange
+source("rankhospital.R")
+rankhospital("TX", "heart failure", 6)
+?%>%
+source("rankhospital.R")
+rankhospital("TX", "heart failure", 6)
+res_df <- arrange(df_outcome_filtered,"Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure")
+res_df["Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure"]
+res_df <- arrange(df_outcome_filtered,df_outcome_filtered["Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure"])
+res_df["Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure"]
+sprintf("%04d", res_df$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure)
+sprintf("%04d", as.numerical(res_df$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure))
+sprintf("%04d", as.numeric(res_df$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure))
+?as.number
+sprintf("%04f", as.numeric(res_df$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure))
+sprintf("%03d", as.numeric(res_df$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure))
+sprintf("%03e", as.numeric(res_df$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure))
+sprintf("%03g", as.numeric(res_df$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure))
+sprintf("%03d", as.numeric(res_df$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure))
+sprintf("%03a", as.numeric(res_df$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure))
+sprintf("%03d", as.numeric(res_df$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure))
+?drop.na
+?dropna
+library(tidyr)
+library(tidyverse)
+install.packages("tidyverse")
+library(tidyr)
+drop_na(df_outcome_filtered[,"Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack"])
+df_outcome_filtered[,"Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack"] <- as.numeric(df_outcome_filtered[,"Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack"])
+drop_na(df_outcome_filtered[,"Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack"])
+drop_na(df_outcome_filtered["Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack"])
+df_outcome_filtered["Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack"] <- drop_na(df_outcome_filtered["Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack"])
+df_outcome_filtered["Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack"]
+drop_na(df_outcome_filtered["Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack"])
+is.na(df_outcome_filtered["Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack"])
+bool_df <- !is.na(df_outcome_filtered["Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack"])
+df_outcome_filtered_2 <- df_outcome_filtered(bool_df)
+df_outcome_filtered_2 <- df_outcome_filtered[bool_df]
+head(df_outcome_filtered_2)
+drop_na(df_outcome_filtered[,"Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack"])
+df_outcome_filtered[,!is.na(df_outcome_filtered["Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack"])])
+df_outcome_filtered[,!is.na(df_outcome_filtered["Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack"])]
+df_outcome_filtered[!is.na(df_outcome_filtered["Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack"])]
+df_outcome_filtered[!is.na(df_outcome_filtered[,"Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack"])]
+df_outcome_filtered[!is.na(df_outcome_filtered$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack)]
+df_outcome_filtered$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack
+df_outcome_filtered[!is.na(df_outcome_filtered$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack),]
+df_outcome_filtered[complete.cases(df_outcome_filtered["Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack"]),]
+df_2 <- df_outcome_filtered[complete.cases(df_outcome_filtered["Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack"]),]
+sprintf("%03d", df_2$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure)
+sprintf("%03d", as.numeric(df_2$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure))
+sprintf("%03.f", as.numeric(df_2$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure))
+sprintf("%03f", as.numeric(df_2$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure))
+sort(sprintf("%03f", as.numeric(df_2$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure)))
+sort(sprintf("%03f.", as.numeric(df_2$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure)))
+sort(sprintf("%03.f", as.numeric(df_2$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure)))
+sort(sprintf("%0", as.numeric(df_2$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure)))
+sort(sprintf("%0f", as.numeric(df_2$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure)))
+sort(sprintf("%0.f", as.numeric(df_2$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure)))
+df_2[order(as.numeric(df_2$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure)),]
+head(df_2[order(as.numeric(df_2$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure)),])
+source(hospitalrank.R)
+source(rankhospital.R)
+dir()
+source("rankhospital.R")
+rankhospital("TX", "heart failure", 4)
+?order
+dff <- df_2[order(as.numeric(df_2$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure)),]
+dff["Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure"]
+dff["Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure","Hospital.Name"]
+dff[c("Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure","Hospital.Name")]
+?lapply
+?tapply
+tapply(dff[c("Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure","Hospital.Name")],"Hospital.Name",sort)
+tapply(dff[c("Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure","Hospital.Name")],dff["Hospital.Name"],sort)
+tapply(dff,"Hospital.Name",sort)
+tapply(dff,dff["Hospital.Name"],sort)
+split(dff, "Hospital.Name")
+head(split(dff, "Hospital.Name"))
+apply(split(dff,"Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure"))
+apply(split(dff,"Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure"), sort)
+apply(split(dff,"Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure"), FUN = sort)
+split_dff <- split(dff, dff$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure)
+head(split_dff)
+s <- apply(split_dff,"Hospital.Name", sort)
+s <- apply(split_dff$Hospital.Name, sort)
+s <- apply(split_dff$Hospital.Name, FUN = sort)
+head(split_dff$Hospital.Name)
+head(split_dff["Hospital.Name"])
+head(split_dff)
+names(split_dff)
+source(rankhospital.R)
+dir()
+source("rankhospital.R")
+rankhospital("TX", "heart failure", 4)
+res_df <- df_outcome_filtered2[order(as.numeric(df_2[[col_name]]),"Hospital.Name"),]
+df_outcome_filtered[,col_name] <- as.numeric(df_outcome_filtered[,col_name])
+col_name <- "Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure"
+df_outcome_filtered[,col_name] <- as.numeric(df_outcome_filtered[,col_name])
+df_outcome_filtered2 <- df_outcome_filtered[complete.cases(df_outcome_filtered[col_name]),]#
+    res_df <- df_outcome_filtered2[order(as.numeric(df_2[[col_name]]),"Hospital.Name"),]
+res_df <- df_outcome_filtered2[order(as.numeric(df_2[[col_name]]),df_2[["Hospital.Name"]]),]
+head(res_df)
+res_df <- df_outcome_filtered2[order(as.numeric(df_2[[col_name]])),]
+head(res_df)
+source("rankhospital.R")
+rankhospital("TX", "heart failure", 4)
